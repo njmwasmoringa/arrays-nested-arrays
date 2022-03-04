@@ -1,4 +1,4 @@
-let patients = []; // an array of strings - patientNames
+/* let patients = []; // an array of strings - patientNames
 let labResults = [
     ['Julius', 'blood'],
     ['Julius', 'pressure'],
@@ -58,7 +58,7 @@ function chekOutAllLabResults(patiantName){
 function checkOut(){
 
 }
-
+ */
 
 
 
@@ -70,7 +70,7 @@ function checkOut(){
 
 
 //Nested array
-/* let labResults = [
+let labResults = [
     ['Julius', 'blood'],
     ['Julius', 'pressure'],
     ['Mwangi', 'blood'],
@@ -83,14 +83,22 @@ const name = item3[1];
 console.log(item3);
 console.log(name);
 
-function find(func){
-    const name = 'julius';
-    func(name);
+function find(func) {
+    for (let i=0; i<labResults.length; i++) {
+        if (func(item) == true) {
+            return item;
+        }
+    }
 }
 
-const secondFunction = (name)=>{
-    console.log(name);
+const secondFunction = (item) => {
+    if (item[0] == patiantName && item[1] == typeOfResult) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 find(secondFunction);
- */
+
